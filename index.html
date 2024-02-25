@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel = "stylesheet" href = "style.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Calculator</title>
+    
+    
+</head>
+<body>
+    <h2>Nutrition Calculator</h2>
+    <div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age">
+        </div>
+        <div class="form-group">
+            <label for="sex">Sex:</label>
+            <select id="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height">
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight">
+        </div>
+        <div class="form-group">
+            <label for="activity">Activity Level:</label>
+            <select id="activity">
+                <option value="sedentary">Sedentary (not active)</option>
+                <option value="light">Lightly active (light exercise/sports 3-5days/week)</option>
+                <option value="moderate">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                <option value="very">Very active (hard exercise/sports 5-7 days/week)</option>
+                <option value="extreme">Extremely active (extreme exercise/sports 5-7 days a week)</option>
+            </select>
+
+        </div>
+        <div class="form-group">
+            <label for="steps">How many steps do you walk on an average day?</label>
+            <input type="number" id="steps">
+        </div>
+        <div class="form-group">
+            <label for="goal">Current Fitness Goal:</label>
+            <select id="goal">
+                <option value="bulk">Bulk (Increase Muscle Mass and Bodyweight)</option>
+                <option value="maintain">Maintain (Maintain Bodyweight)</option>
+                <option value="cut">Cut (Lose Weight while minimizing muscle loss)</option>
+            </select>
+        </div>
+        <button onclick="calculateNutrition()">Calculate</button>
+    </div>
+    <div class="results" id="results"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
