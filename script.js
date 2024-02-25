@@ -40,7 +40,7 @@ function calculateNutrition() {
     const carbsNeeds = carbsCalories / 4; // 4 calories per gram of carbs
 
     document.getElementById('results').innerHTML = `
-        <p>Basal Metabolic Rate(BMR): ${bmr.toFixed(2)} calories</p>
+        <p>Basal Metabolic Rate (BMR): ${bmr.toFixed(2)} calories</p>
         <p>Total Daily Energy Expenditure (TDEE): ${tdee.toFixed(2)} calories</p>
         <p>Recommended Daily Calorie Intake: ${dailyCalories.toFixed(2)} calories</p>
         <p>Recommended Daily Protein Intake: ${proteinNeeds.toFixed(2)}g</p>
